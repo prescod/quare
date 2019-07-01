@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.com/jstvz/quare.svg?token=wyryPHwFnqhmwjV5kQz5&branch=master)](https://travis-ci.com/jstvz/quare)
 [![PyPI - License](https://img.shields.io/pypi/l/quare.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 ![PyPI](https://img.shields.io/pypi/v/quare.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/quare.svg)
+![PyPI - Status](https://img.shields.io/pypi/status/quare.svg)
 
 Interact with Quip from the command line.
 
