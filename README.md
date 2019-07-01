@@ -1,8 +1,8 @@
 # quare
 
 [![Build Status](https://travis-ci.com/jstvz/quare.svg?token=wyryPHwFnqhmwjV5kQz5&branch=master)](https://travis-ci.com/jstvz/quare)
-[![GitHub](https://img.shields.io/github/license/jstvz/quare.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
-[![GitHub](https://img.shields.io/pypi/v/quare.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+[![PyPI - License](https://img.shields.io/pypi/l/quare.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+![PyPI](https://img.shields.io/pypi/v/quare.svg)
 
 Interact with Quip from the command line.
 
