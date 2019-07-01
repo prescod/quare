@@ -44,7 +44,7 @@ $ quare msg auth --alias test_server --token 't1DJBQWBXHCYgh1=|2983928392|nYtRFI
 
 To see information about the logged in user:
 ```console
-$ quare msg auth --alias test_server --token 't1DJBQWBXHCYgh1=|2983928392|nYtRFIhV7nl...'
+$ quare msg whoami
 ┌Default───────┬───────────────┐
 │ Name         │ Tests Testeri │
 ├──────────────┼───────────────┤
