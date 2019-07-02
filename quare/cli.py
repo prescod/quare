@@ -179,4 +179,4 @@ def print_msgs(messages, json_=False):
         return
     else:
         for message in messages:
-            utils.print_quip_message(QuipMessage(**message))
+            utils.print_quip_message(QuipMessage.from_dict(message))

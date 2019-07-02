@@ -76,6 +76,10 @@ class QuipMessage:
     mention_user_ids: List[str] = None
     files: List[str] = None
 
+    @classmethod
+    def from_dict(cls, dict_val):
+        return cls(**{k: v for k, v in dict_val.items() if k in cls.__annotations__})
+
     @property
     def created(self):
         return self._parse_time(self.created_usec)
@@ -201,4 +205,4 @@ class QuipThread:
         msg_dict = client.new_message(
             self.id, content=content, silent=silent, frame=frame, parts=parts
         )
-        return QuipMessage(**msg_dict)
+        return QuipMessage.from_dict(msg_dict)
