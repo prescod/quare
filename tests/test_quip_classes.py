@@ -6,7 +6,7 @@
 from unittest import mock
 import pytest
 
-from quare.quip_classes import QuipFolder, QuipThread
+from quare.quip_classes import QuipFolder, QuipThread, QuipMessage
 
 
 @pytest.fixture
@@ -60,3 +60,11 @@ def test_thread__get_messages(get_msg, get_thread, document_thread, thread_messa
     msgs = thread.get_messages("token")
     assert len(msgs) == len(thread_messages)
     assert thread.id == document_thread["thread"]["id"]
+
+
+def test_message__from_dict(thread_messages):
+    msg_dict = thread_messages[0]
+    msg_dict["undocumented_key"] = "foo"
+    msg = QuipMessage.from_dict(msg_dict)
+    # No TypeError is a pass
+    assert msg.id == "fYbADAn7ufP"

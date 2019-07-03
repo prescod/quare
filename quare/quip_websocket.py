@@ -19,7 +19,7 @@ def stream_updates(token):
         if message.get("type") == "message":
             thread = message["thread"]["title"]
             try:
-                msg = QuipMessage(**message.get("message"))
+                msg = QuipMessage.from_dict(message.get("message"))
                 msg.print(msg, thread=thread)
             except Exception as e:
                 print(e)
