@@ -24,6 +24,7 @@ before_script:
 stages:
     - Static Analysis
     - Test
+    - Build
 
 lint:
   stage: Static Analysis
@@ -41,3 +42,12 @@ unit_test:
     - poetry add -D keyrings.alt
     - poetry install --verbose
     - poetry run pytest -ra --cov=quare tests/
+
+build:
+  stage: Build
+  only:
+      - tags
+      refs:
+          - master
+  script:
+    - poetry publish --username $PYPI_USER --password $PYPY_TOKEN -- build
