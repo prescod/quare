@@ -20,6 +20,7 @@ cache:
 before_script:
     - python --version
     - pip install --upgrade pip
+    - pip install poetry
 
 stages:
     - Static Analysis
@@ -37,7 +38,6 @@ unit_test:
   stage: Test
   script:
     - export TZ=America/Los_Angeles
-    - pip install poetry
     - poetry config settings.virtualenvs.in-project true
     - poetry add -D keyrings.alt
     - poetry install --verbose
