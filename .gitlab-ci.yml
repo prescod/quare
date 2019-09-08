@@ -19,9 +19,7 @@ cache:
 
 before_script:
   - python --version
-  - pip install
-  - virtualenv venv
-  - source venv/bin/activate
+  - pip install --upgrade pip
 
 lint:
   script:
