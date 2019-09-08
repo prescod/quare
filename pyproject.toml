@@ -43,6 +43,7 @@ seed-isort-config = "^1.5"
 Sphinx = "^1.8"
 tox = "^3.7"
 twine = "^1.12"
+bump2version = "^0.5.11"
 
 [tool.isort.settings]
 known_first_party = "quip,quare"
