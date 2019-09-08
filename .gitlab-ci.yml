@@ -30,7 +30,8 @@ lint:
 test:
   script:
     - export TZ=America/Los_Angeles
-    - pip install poetry keyrings.alt pytest
+    - pip install poetry
     - poetry config settings.virtualenvs.in-project true
+    - poetry add -D keyrings.alt
     - poetry install --verbose
     - poetry run pytest -ra --cov=quare tests/
