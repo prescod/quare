@@ -1,6 +1,7 @@
 # quare
 
-[![Build Status](https://travis-ci.com/jstvz/quare.svg?token=wyryPHwFnqhmwjV5kQz5&branch=master)](https://travis-ci.com/jstvz/quare)
+[![pipeline status](https://gitlab.com/jstvz/quare/badges/master/pipeline.svg)](https://gitlab.com/jstvz/quare/commits/master)
+[![coverage report](https://gitlab.com/jstvz/quare/badges/master/coverage.svg)](https://gitlab.com/jstvz/quare/commits/master)
 [![PyPI - License](https://img.shields.io/pypi/l/quare.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 ![PyPI](https://img.shields.io/pypi/v/quare.svg)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/quare.svg)
