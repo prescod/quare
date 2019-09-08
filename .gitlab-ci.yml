@@ -33,4 +33,4 @@ test:
     - pip install poetry keyrings.alt pytest
     - poetry config settings.virtualenvs.in-project true
     - poetry install --verbose
-    - pytest -ra --cov=quare tests
+    - poetry run pytest -ra --cov=quare tests/
