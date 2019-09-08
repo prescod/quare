@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "quare"
-version = "0.2.2"
+version = "0.2.3"
 description = "quare is a CLI client for Quip."
 readme = "README.md"
 license="LGPL-3.0+"
