@@ -47,7 +47,7 @@ build:
   stage: Build
   only:
       - tags
-      refs:
-          - master
+  except:
+      - branches
   script:
     - poetry publish --username $PYPI_USER --password $PYPY_TOKEN -- build
