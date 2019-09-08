@@ -1,7 +1,7 @@
 History
 =======
 
-0.2.2 (2019-09-07)
+0.2.3 (2019-09-07)
 ------------------
 
 -   Fixed TypeError triggered when receiving an undocumented key from the api.
