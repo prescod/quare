@@ -32,5 +32,5 @@ test:
     - export TZ=America/Los_Angeles
     - pip install poetry keyrings.alt pytest
     - poetry config settings.virtualenvs.in-project true
-    - poetry install --verbose --extras tests
+    - poetry install --verbose
     - pytest -ra --cov=quare tests
