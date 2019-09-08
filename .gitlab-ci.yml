@@ -18,16 +18,22 @@ cache:
     - .venv
 
 before_script:
-  - python --version
-  - pip install --upgrade pip
+    - python --version
+    - pip install --upgrade pip
+
+stages:
+    - Static Analysis
+    - Test
 
 lint:
+  stage: Static Analysis
   script:
     - pip install pre-commit
     - pre-commit install-hooks
     - pre-commit run --all-files
 
-test:
+unit_test:
+  stage: Test
   script:
     - export TZ=America/Los_Angeles
     - pip install poetry
