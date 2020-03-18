@@ -62,6 +62,8 @@ The destination may be a document or chat:
 $ quare msg send --room room_id --content 'Hello everyone!'
 ```
 
+You can infer the `room_id` from the URL you see when you visit the document or chat in the Web interface.
+
 #### Pipe content from `stdin` ####
 
 Message content can be piped from `stdin`:
